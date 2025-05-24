@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <!--Aplica estilos internos usando la etiqueta <style> en el <head>.-->
+    <style>
+        th, td, table {
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: #BDF7B7;
+        }
+        td {
+            background-color: #F8F4A6;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <section>
+        <h2>How to create tables</h2>
+        <article>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th colspan="2">Genre</th>
+                    <th>Published</th>
+                </tr>
+                <tr>
+                    <td>A Song of Ice and Fire. A Dance with Dragons</td>
+                    <td>George R.R Martin</td>
+                    <td>Fantasy</td>
+                    <td>High Fantasy</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>Pride and Prejudice</td>
+                    <td>Jane Austen</td>
+                    <td>Novel</td>
+                    <td>Love</td>
+                    <td>1813</td>
+                </tr>
+                <tr>
+                    <td>Cien años de Soledad</td>
+                    <td>Gabriel García Márquez</td>
+                    <td>Novel</td>
+                    <td>Magic Realism</td>
+                    <td>1967</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Good Omens</td>
+                    <td>Neil Gaiman</td>
+                    <td rowspan="2">Horror</td>
+                    <td rowspan="2">Fantasy</td>
+                    <td rowspan="2">1990</td>
+                </tr>
+                <tr>
+                    <td>Terry Pratchett</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+</body>
+</html> 

@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <!--Aplica estilos internos para cambiar fuentes, tamaños y colores.-->
+    <style>
+        ol{
+            background-color: #7D4E57;
+            color: white;
+            list-style-position: inside;
+            list-style-type: lower-roman;
+        }
+        ol li{
+            background-color:#DC7D6A ;
+        }
+
+        ul{
+            background-color:#212D40 ;
+            color: white;
+            list-style-position: inside;
+            list-style-type:square;
+        }
+        ul li{
+            background-color: #7587A9;
+        }
+        dl{
+            background-color: #413C58;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        dl dt{
+            background-color: #413C58;
+            color: white;
+        }
+        dl dd{
+            background-color: #A39EBD;
+        }
+
+        .first{
+            font-size: larger;
+            font-style: oblique;
+            background-color: #5438DC;
+        }
+
+        .last{
+            font-size: smaller;
+            font-style:normal;
+            color: white;
+            background-color: #B24C63;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lists Practice</h1>
+    <section>
+        <h2>Ordered List</h2>
+        <article>
+            <h3>My Favorite Literature Authors</h3>
+            <ol>
+                <li class="first">Gabriel García Márquez</li>
+                <li>Edgar Allan Poe</li>
+                <li>José Saramago</li>
+                <li>Fiódor Dostoievski</li>
+                <li class="last">George R.R Martin</li>
+            </ol>
+        </article>
+        <h2>Unordered List</h2>
+        <article>
+            <h3>My Favorite Books</h3>
+            <ul>
+                <li class="first">Cien Años de Soledad</li>
+                <li>La Fiesta del Chivo</li>
+                <li>A Dance With Dragons</li>
+                <li>Las Intermitencias de la Muerte</li>
+                <li class="last">The Brothers Karamazov</li>
+            </ul>
+        </article>
+        <h2>Descripton list</h2>
+        <article>
+            <h3>Type of online games</h3>
+            <dl>
+                <dt class="first">MMORPG (Massively multiplayer online role-playing games)</dt>
+                <dd> 
+                    the player assumes the role of a character (often in a fantasy world or science-fiction world) and takes control over many of that character's actions
+                </dd>
+                <dt>Battle Royal</dt>
+                <dd>
+                    A battle royale game is a genre that blends the survival, exploration and scavenging elements of a survival game with last-man-standing gameplay.
+                </dd>
+                <dt>MOBA (Multiplayer online battle arena) </dt>
+                <dd>
+                    is a subgenre of strategy video games in which two teams of players compete on a structured battlefield, each controlling a single character with distinctive abilities that grow stronger as the match progresses
+                </dd>
+                <dt class="last">FPS (First person shooter)</dt>
+                <dd>
+                    is a video game centered on gun fighting and other weapon-based combat seen from a first-person perspective, with the player experiencing the action directly through the eyes of the main character
+                </dd>
+            </dl>
+        </article>
+    
+    </section>
+</body>
+</html>
