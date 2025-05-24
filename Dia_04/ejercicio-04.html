@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <section>
+        <h1>Forms</h1>
+        <article>
+            <form action="/send" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required> <br><br>
+                <label for="password">Password</label>
+                <input type="password" placeholder="J2*passexample"><p style="font-size: small;"><em>You must include especial caracters, numbers and capital letters</em></p>
+                <label for="message">Message</label> <br>
+                <textarea name="message" id="message" rows="10" cols="20" required minlength="100"></textarea>
+            </form>
+        </article>
+    </section>
+    <!--Agrega un menú desplegable <select> con 3 opciones.-->
+    <section>
+        <h2>Drop-down Menu</h2>
+        <article>
+            <form action="/send" method="post">
+                <label for="programming languages">Choose your a programming language you are into in</label> <br><br>
+                <select name="programming languages" id="programming languages">
+                    <option value="java">Ruby</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </form>
+        </article>
+    </section>
+</body>
+</html>

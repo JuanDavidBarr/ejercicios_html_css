@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <section>
+        <h1>Forms</h1>
+        <article>
+            <form action="/send" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required> <br><br>
+                <label for="password">Password</label>
+                <input type="password" placeholder="J2*passexample"><p style="font-size: small;"><em>You must include especial caracters, numbers and capital letters</em></p>
+                <label for="message">Message</label> <br>
+                <textarea name="message" id="message" rows="10" cols="20" required minlength="100"></textarea>
+            </form>
+        </article>
+    </section>
+    <section>
+        <h2>Drop-down Menu</h2>
+        <article>
+            <form action="/send" method="post">
+                <label for="programming languages">Choose your a programming language you are into in</label> <br><br>
+                <select name="programming languages" id="programming languages">
+                    <option value="java">Ruby</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </form>
+        </article>
+    </section>
+    <section>
+        <h2>Check-box</h2>
+        <article>
+            <p>Do you like programming?</p>
+            <form action="/send" method="post">
+                <input type="checkbox" id="option1" name="option1">
+                <label for="option2">Of Course</label>
+                <input type="checkbox" id="option2" name="option2">
+            </form>
+        <label for="option1">Yes</label>
+        </article>
+        <h2>Radio</h2>
+        <!--Agrega casillas de verificación y botones de radio.-->
+        <article>
+            <p>If you hadn't been born in Colombia, where would have you liked to?</p>
+            <form action="/send" method="post">
+                <input type="radio" id="option1" name="option1">
+                <label for="option1">USA</label>
+                <input type="radio" id="option2" name="option2">
+                <label for="option2">Russia</label>
+                <input type="radio" id="option3" name="option3">
+                <label for="option3">China</label>
+                <input type="radio" id="option4" name="option4">
+                <label for="option4">UK</label>
+            </form>
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <section>
+        <h1>Forms</h1>
+        <article>
+            <form action="/send" method="post">
+                <label for="name">Name</label>
+                <input style="border-style: double; background-color: aqua;" type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input style="border-style:solid; background-color: rgb(165, 105, 90);" type="email" id="email" name="email" required> <br><br>
+                <label for="password">Password</label>
+                <input type="password" placeholder="J2*passexample"><p style="font-size: small;"><em>You must include especial caracters, numbers and capital letters</em></p>
+                <label style="margin-left: 13.5%;" for="message">Message</label> <br>
+                <textarea style="margin-left: 10%; background-color: blueviolet;" name="message" id="message" rows="10" cols="20" required minlength="100"></textarea> <br><br>
+                <input style="margin-left: 12%;" type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </article>
+    </section>
+    <section>
+        <h2>Drop-down Menu</h2>
+        <article>
+            <form action="/send" method="post">
+                <label for="programming languages">Choose your a programming language you are into in</label> <br><br>
+                <select name="programming languages" id="programming languages">
+                    <option value="java">Ruby</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </form>
+        </article>
+    </section>
+    <section>
+        <h2>Check-box</h2>
+        <article>
+            <p>Do you like programming?</p>
+            <form action="/send" method="post">
+                <label for="option1">Yes</label>
+                <input type="checkbox" id="option1" name="option1">
+                <label for="option2">Of Course</label>
+                <input type="checkbox" id="option2" name="option2"> <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </article>
+        <h2>Radio</h2>
+        <article>
+            <p>If you hadn't been born in Colombia, where would have you liked to?</p>
+            <form action="/send" method="post">
+                <input type="radio" id="option1" name="option1">
+                <label for="option1">USA</label>
+                <input type="radio" id="option2" name="option2">
+                <label for="option2">Russia</label>
+                <input type="radio" id="option3" name="option3">
+                <label for="option3">China</label>
+                <input type="radio" id="option4" name="option4">
+                <label for="option4">UK</label> <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </article>
+    </section>
+    <section">
+        <h2>Fieldset</h2>
+        <!--Agrupa campos usando <fieldset> y <legend>.-->
+        <article>
+            <form action="/send" method="post">
+                <fieldset>
+                    <legend>Sports Information</legend>
+                    <p>Sport you are interested in</p>
+                    <input type="radio", id="option1" name="option1">
+                    <label for="option1">Soccer</label> <br>
+                    <input type="radio", id="option2" name="option2">
+                    <label for="option2">Basketball</label> <br>
+                    <input type="radio", id="option3" name="option3">
+                    <label for="option3">Soccer</label> <br>
+                    <input type="radio", id="option4" name="option4">
+                    <label for="option4">Soccer</label>
+                    <p>Skill Level</p>
+                    <input type="radio", id="option1" name="option1">
+                    <label for="option1">Beginner</label> <br>
+                    <input type="radio", id="option2" name="option2">
+                    <label for="option2">Intermediate</label> <br>
+                    <input type="radio", id="option3" name="option3">
+                    <label for="option3">Advanced</label> <br><br>
+                    <label for="position">Prefered position/rol</label>
+                    <input type="text" id="position" name="position">
+                </fieldset>
+            </form>    
+        </article>
+    </section>
+</body>
+</html>
