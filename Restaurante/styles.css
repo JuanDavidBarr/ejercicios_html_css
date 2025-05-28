@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__link{
+    margin: 20px;
+}
+
+
+
+
