@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-footer{
-    margin-top: 20px;
-}
-
 h1{
     text-align: center;
     margin-top: 20px;
@@ -21,6 +17,10 @@ h2{
     margin-top: 20px;
 }
 
+h4{
+    text-align: center;
+}
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -28,7 +28,41 @@ h2{
 
 .navbar__link{
     margin: 20px;
+    text-align: center;
 }
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__product{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+.product__image{
+    width: 100px;
+    height: 100px;
+}
+
+.product__description{
+    text-align: center;
+}
+
+
+.navbar--footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    margin-top: 40px;
+}
+
+
 
 
 
